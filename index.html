@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<h2>Form Generator V1.O</h2>
+<form action="">
+  <div class="formcontrol" id="s1">
+    <label for="tipocampo">Elige el tipo de campo a introducir: </label>
+    <select name="tipocampo" id="tipocampo">
+      <option value=""></option>
+      <option value="input-txt">Input Text</option>
+      <option value="input-num">Input Number</option>
+      <option value="input-email">Input Email</option>
+      <option value="select">Select</option>
+      <option value="input-radio">Input radio</option>
+      <option value="input-checkbox">Input checkbox</option>
+      <option value="btn">Botón enviar</option>
+    </select>
+  </div>
+  <div class="formcontrol stage2 hidden">
+    <label for="inputlabel">Introduce la etiqueta del campo: </label>
+    <input type="text" id="inputlabel" name="inputlabel">
+    <button type="button" id="labelbtn">OK</button>
+    <div id="labels">
+    </div>
+  </div>
+  <div class="formcontrol stage-btn hidden">
+    <label for="inputlabel">Introduce el valor del botón: </label>
+    <input type="text" id="botonlabel" name="inputlabel">
+    <button type="button" id="btnbtn">OK</button>
+    <div id="botonlb">
+    </div>
+  </div>
+  <div class="formcontrol options hidden">
+    <label for="inputlabel">Introduce las opciones (los valores serán iguales pero en minúsculas y con los espacios removidos):</label>
+    <input type="text" id="select-options" name="select-options">
+    <button type="button" id="select-btn">OK</button>
+    <div id="options-container">
+      Opciones elegidas:
+    </div>
+  </div>
+  <div class="formcontrol stage-select hidden">
+    <label for="options">Introduce aquí las opciones a incluir en el select, input radio o input checkbox y pulsa añadir:</label><br>
+    <input type="text" id="options" name="options">
+    <button type="button" id="add-options">Añadir</button>
+  </div>
+  <div class="formcontrol">
+    <button type="button" id="add-input" class="hidden">AÑADIR</button>
+  </div>
+</form>
+<hr>
+<form action="" id="new-form">
+<h3>Tu formulario</h3>
+</form>
+<script src="js/form-generator.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+}
+.formcontrol {
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+input, select, button {
+    border: 1px solid #7f8c8d;
+    border-radius: 3px;
+    padding: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #1abc9c;
+    color: white;
+}
+
+h2 {
+    color: #1abc9c;
+}
+
+#labels, #botonlb, #options-container {
+    color: #2980b9;
+    font-size: 0.8em;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#labels>p, #botonlb>p, #options-container>p {
+    color: #2980b9;
+    margin-left: 20px;
+    font-weight: normal;
+}
